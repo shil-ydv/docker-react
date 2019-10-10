@@ -1,0 +1,50 @@
+info:
+  title: Sample_API
+  version: "1.0"
+  x-lastModified: Oct 10, 2019 03:23AM PST
+paths:
+  /sample/echo/get:
+    get:
+      operationId: getSampleEchoGet
+      parameters:
+      - description: ""
+        format: ""
+        in: query
+        name: api_key
+        required: true
+        type: string
+      - default: application/json; charset=utf-8
+        description: ""
+        format: ""
+        in: header
+        name: Content-Type
+        required: false
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+  /sample/echo/post:
+    post:
+      operationId: postSampleEchoPost
+      parameters:
+      - description: ""
+        format: ""
+        in: query
+        name: api_key
+        required: true
+        type: string
+      - default: application/json; charset=utf-8
+        description: ""
+        format: ""
+        in: header
+        name: Content-Type
+        required: false
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+swagger: "2.0"
